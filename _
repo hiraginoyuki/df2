@@ -1,0 +1,2 @@
+#[ -f ~/.df2/_ ]&&. ~/.df2/_
+case  $SHELL in zsh | */zsh)  source "${DF2_DIR:=$HOME/.df2}/zshrc";;  esac

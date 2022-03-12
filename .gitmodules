@@ -1,0 +1,6 @@
+[submodule "history-search-multi-word"]
+	path = history-search-multi-word
+	url = https://github.com/zdharma-continuum/history-search-multi-word
+[submodule "fast-syntax-highlighting"]
+	path = fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting
