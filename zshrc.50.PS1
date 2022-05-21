@@ -10,7 +10,7 @@ fi
 
 if [[ "$(ps -o comm= -p $PPID)" =~ '(.*/)?mosh-server' ]]; then
   MOSH='(mosh) '
-if
+fi
 
 # https://unix.stackexchange.com/a/9607/37523
 [ -z "$MOSH" ] && \
