@@ -4,7 +4,8 @@ R="%F{9}"  # Red
 G="%F{8}"  # Gray
 B="%F{12}" # Blue
 
-if ! diff /proc/1/mountinfo /proc/self/mountinfo &>/dev/null; then
+system_name="$(uname -s)"
+if ! diff /proc/1/mountinfo /proc/self/mountinfo &>/dev/null && { [ "${system_name}" -eq "Darwin" ] || [ -z "${system_name}" ] }; then
   CHROOT='(chroot) '
 fi
 
